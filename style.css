@@ -3,42 +3,43 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;  /* Important for responsive layouts */
  }
 
 body {
-    font-family: 'Open Sans', sans-serif; 
-    line-height: 1.6;          
+    font-family: 'Open Sans', sans-serif; /* Default font */
+    line-height: 1.6;          /* Improved readability */
 }
 
 /* ================== General Reusable Styles ================== */
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;          
-    padding: 0 20px;         
+    max-width: 1200px;        /* Standard container width */
+    margin: 0 auto;           /* Center the container */
+    padding: 0 20px;          /* Add some side padding */
+}
 
 
 /* ================== Navbar ================== */
 
 nav {
     width: 100%;
-    height: auto;   
+    height: auto;   /* Adjust height */
     background-color: white;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Allow items to wrap */
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; 
+    padding: 10px 20px; /* Add padding */
     position: sticky;
     top: 0;
     z-index: 999;
 }
 
 .logo h2 {
-    font-size: 24px; 
+    font-size: 24px; /* Smaller logo font */
     color: black;
-    margin: 0;      
+    margin: 0;      /* Reset margins */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -55,7 +56,7 @@ nav {
     color: white;
     display: none;
     font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
-    
+    /* display: none; */
 }
 
 .dropdown {
@@ -68,7 +69,7 @@ nav {
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
-    
+    /* display: none; */
 }
 
 .dropdown .links a {
@@ -89,13 +90,13 @@ nav {
 .main_ul {
     display: flex;
     list-style: none;
-    margin: 0;    
+    margin: 0;      /* Reset margins */
     padding: 0;
     justify-content: center;
 }
 
 .main_ul > li {
-    margin: 0 10px;
+    margin: 0 10px; /* Smaller spacing */
     position: relative;
 }
 
@@ -103,7 +104,7 @@ nav {
     display: block;
     color: #7f7f90;
     text-decoration: none;
-    font-size: 16px; 
+    font-size: 16px; /* Smaller font size */
     font-weight: 550;
     padding: 10px 0;
     transition: color 0.3s ease-in-out;
@@ -144,7 +145,7 @@ nav {
     width: 200px;
     background-color: white;
     position: absolute;
-    top: 100%; 
+    top: 100%; /* Position below the parent */
     left: 0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -182,7 +183,7 @@ nav {
     display: block;
 }
 
-
+/* Button */
 .btn {
     font-size: 14px;
     padding: 8px 15px;
@@ -204,17 +205,17 @@ nav {
 
 .section_2 {
     width: 100%;
-    padding: 20px;  
+    padding: 20px;  /* Add padding */
     background-color: #eeeeee;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Allow wrapping */
     justify-content: space-between;
     align-items: center;
 }
 
 .section_2 > div {
-    width: 100%;     
-    margin: 20px 0; 
+    width: 100%;      /* Full width by default */
+    margin: 20px 0; /* Add vertical margin */
 }
 
 .text_area {
@@ -276,10 +277,10 @@ nav {
 }
 
 .img img {
-    width: 100%;      
-    height: auto;     
-    max-width: 500px; 
-    display: block;    
+    width: 100%;      /* Make image responsive */
+    height: auto;     /* Maintain aspect ratio */
+    max-width: 500px; /* Set a max width */
+    display: block;    /* Remove extra space below image */
     margin: 0 auto;
 }
 
@@ -318,7 +319,7 @@ nav {
 }
 
 .section_3 main > div {
-    width: 100%; 
+    width: 100%; /* Full width for small screens */
     margin-bottom: 30px;
 }
 
@@ -334,7 +335,7 @@ nav {
 }
 
 .div_text {
-    width: 90%; 
+    width: 90%; /* Adjust width */
     max-width: 600px;
     background: #fff;
     position: absolute;
@@ -399,14 +400,14 @@ nav {
     background-color: #eeeeee;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: stretch;    
+    justify-content: center; /* Center items horizontally */
+    align-items: stretch;    /* Stretch items vertically */
 }
 
 .section_4 > div {
-    width: 100%;            
-    margin: 15px;            
-    text-align: center;      
+    width: 100%;             /* Default width for smaller screens */
+    margin: 15px;            /* Add spacing between items */
+    text-align: center;      /* Center content in each div */
 }
 
 .section_4 .div_1 {
@@ -482,14 +483,14 @@ nav {
 
 .section_5 {
     height: auto;
-    min-height: 300px; 
+    min-height: 300px; /* Minimum height */
     width: 100%;
     background-image: url(./img/stats-bg.jpg);
     background-attachment: fixed;
-    background-size: cover;  
+    background-size: cover;  /* Cover the entire area */
     background-position: center;
     position: relative;
-    padding: 40px 20px; 
+    padding: 40px 20px; /* Add padding */
 }
 
 .section_5 .overlay {
@@ -603,8 +604,8 @@ nav {
 }
 
 .menu_bar table {
-    width: 100%;         
-    border-collapse: collapse; 
+    width: 100%;          /* Make table responsive */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
     margin: 20px 0;
 }
 
@@ -615,13 +616,13 @@ nav {
 }
 
 .menu_bar table tr td {
-    width: 100%;       
+    width: 100%;          /* Stack columns on small screens */
     padding: 20px;
     text-align: center;
 }
 
 .menu_bar table tr img {
-    width: 100%; 
+    width: 100%; /* Ensure images are responsive */
     max-width: 250px;
     height: auto;
     margin-bottom: 10px;
@@ -672,7 +673,7 @@ nav {
 }
 
 .reviews {
-    width: 100%;
+    width: 100%; /* Make responsive */
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -681,11 +682,11 @@ nav {
 
 .reviews::after {
     content: "";
-    height: 50px;   
+    height: 50px;   /* Shorter line */
     width: 2px;
     background-color: #ce1212;
     position: absolute;
-    left: 10px;     
+    left: 10px;     /* Adjusted position */
     top: 23px;
 }
 
@@ -715,11 +716,11 @@ nav {
 }
 
 .reviews .profile {
-    width: 100px;     
+    width: 100px;      /* Smaller profile */
     height: 100px;
     border: 4px solid white;
     border-radius: 50%;
-    margin: 0 auto;   
+    margin: 0 auto;    /* Center profile */
     margin-top: 10px;
 }
 
@@ -762,8 +763,8 @@ nav {
 .item .event_image_2,
 .item .event_image_3 {
     width: 100%;
-    height: 300px;      
-    background-size: cover; 
+    height: 300px;       /* Adjust height */
+    background-size: cover; /* Ensure full coverage */
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -799,7 +800,7 @@ nav {
 .events .item span::after {
     content: "";
     height: 2px;
-    width: 50%; 
+    width: 50%; /* Reduced width */
     background-color: #ce1212;
     position: absolute;
     left: 0;
@@ -846,7 +847,7 @@ nav {
 }
 
 .chefs .chefs_bio {
-    width: 100%;          
+    width: 100%;          /* Full width for small screens */
     max-width: 350px;
     background-color: white;
     margin: 20px;
@@ -924,28 +925,28 @@ nav {
     background-color: rgba(55, 55, 63, 0.04);
     padding: 20px;
     margin-bottom: 20px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack items vertically by default */
+    align-items: center; /* Center items horizontally */
 }
 
 .book_table .form .image {
-    width: 100%;
-    max-width: 500px; 
-    margin-bottom: 20px; 
+    width: 100%; /* Full width for smaller screens */
+    max-width: 500px; /* Limit image width on larger screens */
+    margin-bottom: 20px; /* Add spacing between image and form */
     box-sizing: border-box;
 }
 
 .book_table .form .image img {
-    width: 100%;  
-    height: auto; 
-    display: block;  
-    margin: 0 auto;
+    width: 100%;  /* Image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;  /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image */
 }
 
 .book_table .form .text {
-    width: 100%; 
-    max-width: 600px; 
+    width: 100%; /* Full width for smaller screens */
+    max-width: 600px; /* Limit form width on larger screens */
     box-sizing: border-box;
 }
 
@@ -1046,7 +1047,7 @@ footer {
 @media (max-width: 576px) {
 
     .main_ul {
-       
+        /* flex-direction: column; */
         display: none;
         text-align: center;
     }
@@ -1082,11 +1083,11 @@ footer {
         flex-direction: column;
     }
     .menu_bar .list li {
-        display: block; 
-        margin: 10px 0;  
+        display: block; /* Stack menu items */
+        margin: 10px 0;  /* Add spacing */
     }
     .section_5 .overlay {
-        flex-direction: column;
+        flex-direction: column; /* Stack stats */
     }
 
 }
@@ -1094,10 +1095,10 @@ footer {
 /* Medium screens (tablets) */
 @media (min-width: 768px) {
     .section_2 > div {
-        width: 50%;      
+        width: 50%;      /* Two columns */
     }
     .menu_bar table tr td {
-        width: 50%;         
+        width: 50%;          /* Two columns in menu table */
     }
 }
 
@@ -1120,20 +1121,20 @@ footer {
 
 
     .section_4 {
-      flex-wrap: nowrap;  
+      flex-wrap: nowrap;  /* Keep as row */
     }
 
     .section_4 > div {
-        width: 24%;      
+        width: 24%;      /* 4 divs in a row */
     }
   .menu_bar table tr td {
-        width: 33.33%;         
+        width: 33.33%;          /* Three columns in menu table */
     }
 }
 
 /* Extra large screens (large desktops) */
 @media (min-width: 1200px) {
     .container {
-        max-width: 1400px;
+        max-width: 1400px; /* Wider container */
     }
 }
